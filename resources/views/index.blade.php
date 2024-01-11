@@ -543,7 +543,7 @@ This event is committed to introduce innovative methodologies and technological 
               </a>
               <div class="text pt-4">
               	<div class="meta mb-3">
-                  <div><a href="#">July. 14, 2019</a></div>
+                  <div><a href="#">Mai 05, 2025</a></div>
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>

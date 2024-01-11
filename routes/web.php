@@ -128,7 +128,7 @@ Route::get('/payement', [PaymentController::class, 'show'])->name('payement');
 
 
 
-Route::get('/keynotes/index', [KeynotesController::class, 'index']);
+Route::get('/keynotes', [KeynotesController::class, 'index'])->name('keynotes');
 
 
 

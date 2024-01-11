@@ -2,12 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\keynotes;
+use App\Models\authors;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
-use Illuminate\Contracts\View\Factory;
 
-class KeynotesController extends Controller
+class AuthorsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,10 +14,9 @@ class KeynotesController extends Controller
      */
     public function index()
     {
-        $keynotes = Keynotes::all();
-        return response()->view('keynotes.index', compact('keynotes'));
+        //
     }
-    
+
     /**
      * Show the form for creating a new resource.
      *
@@ -44,22 +41,21 @@ class KeynotesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\keynotes  $keynotes
+     * @param  \App\Models\authors  $authors
      * @return \Illuminate\Http\Response
      */
-    public function show(keynotes $keynotes)
+    public function show(authors $authors)
     {
-        return view('keynotes.show', compact('keynote'));
-
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\keynotes  $keynotes
+     * @param  \App\Models\authors  $authors
      * @return \Illuminate\Http\Response
      */
-    public function edit(keynotes $keynotes)
+    public function edit(authors $authors)
     {
         //
     }
@@ -68,10 +64,10 @@ class KeynotesController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\keynotes  $keynotes
+     * @param  \App\Models\authors  $authors
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, keynotes $keynotes)
+    public function update(Request $request, authors $authors)
     {
         //
     }
@@ -79,10 +75,10 @@ class KeynotesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\keynotes  $keynotes
+     * @param  \App\Models\authors  $authors
      * @return \Illuminate\Http\Response
      */
-    public function destroy(keynotes $keynotes)
+    public function destroy(authors $authors)
     {
         //
     }

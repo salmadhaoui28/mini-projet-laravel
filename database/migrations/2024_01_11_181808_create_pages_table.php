@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateKeynotesTable extends Migration
+class CreatePagesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,9 @@ class CreateKeynotesTable extends Migration
      */
     public function up()
     {
-        Schema::create('keynotes', function (Blueprint $table) {
+        Schema::create('pages', function (Blueprint $table) {
             $table->id();
-            $table->string('firstname');
-            $table->string('lastname');
-            $table->string('description');
-            $table->string('website');
-
+            $table->string('name');
             $table->timestamps();
         });
     }
@@ -31,6 +27,6 @@ class CreateKeynotesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('keynotes');
+        Schema::dropIfExists('pages');
     }
 }
