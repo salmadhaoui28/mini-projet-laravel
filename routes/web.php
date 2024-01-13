@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\VideoController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ConferenceParticipantController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\KeynotesController;
+use App\Http\Controllers\SponsorsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -72,11 +74,6 @@ Route::get('/exibitors', function () {
     return view('exibitors');
 })->name('exibitors'); 
 
-
-
-
-
-
 Route::get('/commitees', function () {
     return view('commitees');
 })->name('commitees'); 
@@ -90,7 +87,7 @@ Route::get('/venue', function () {
 })->name('venue'); 
 
 Route::get('/photosvideos', function () {
-    return view('photosvideos');
+    return view('photosvideos.index');
 })->name('photosvideos'); 
 
 Route::get('/contact', function () {
@@ -129,6 +126,10 @@ Route::get('/payement', [PaymentController::class, 'show'])->name('payement');
 
 
 Route::get('/keynotes', [KeynotesController::class, 'index'])->name('keynotes');
+
+Route::get('/sponsors', [SponsorsController::class, 'index'])->name('sponsors');
+
+Route::get('/photosvideos', [VideoController::class, 'index'])->name('photosvideos');
 
 
 

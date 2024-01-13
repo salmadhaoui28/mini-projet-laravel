@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Videos;
+use App\Models\Photos;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use Illuminate\Contracts\View\Factory;
 
 class VideoController extends Controller
 {
@@ -14,7 +17,9 @@ class VideoController extends Controller
      */
     public function index()
     {
-        //
+        $videos = Videos::all();
+        $photos = Photos::all();
+        return response()->view('photosvideos.index', compact('photos', 'videos'));
     }
 
     /**

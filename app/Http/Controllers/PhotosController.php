@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Photos;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use Illuminate\Contracts\View\Factory;
 
 class PhotosController extends Controller
 {
@@ -14,7 +16,7 @@ class PhotosController extends Controller
      */
     public function index()
     {
-        //
+
     }
 
     /**
